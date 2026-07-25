@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polynomials Test | Kestrel</title>
+
+    <link rel="stylesheet" href="PNT.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="studyM.html" class="back">
+        ← Mathematics
+    </a>
+
+    <div class="logo">
+        Kestrel
+    </div>
+
+    <div class="exam-controls">
+
+        <button id="startBtn" class="start-btn">
+            ▶ Start Test
+        </button>
+
+        <div id="timer" class="timer" style="display:none;">
+            20:00
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <h1>Polynomials Practice Test</h1>
+
+    <p>15 Questions • 20 Minutes • Class 10 CBSE</p>
+
+</section>
+
+<!-- ================= INSTRUCTIONS ================= -->
+
+<div class="instructions">
+
+    <h2>Instructions</h2>
+
+    <ul>
+
+        <li>Read every question carefully.</li>
+        <li>Each question carries 1 mark.</li>
+        <li>No negative marking.</li>
+        <li>Click <b>Start Test</b> to begin the timer.</li>
+        <li>The test auto-submits after 20 minutes.</li>
+
+    </ul>
+
+</div>
+
+<!-- ================= QUIZ ================= -->
+
+<form id="quiz">
+
+<!-- Question 1 -->
+
+<div class="question">
+
+    <h3>1. What is the degree of the polynomial 5x³ + 2x − 7?</h3>
+
+    <label><input type="radio" name="q1">1</label>
+    <label><input type="radio" name="q1">2</label>
+    <label><input type="radio" name="q1" data-correct="true">3</label>
+    <label><input type="radio" name="q1">5</label>
+
+</div>
+
+<!-- Question 2 -->
+
+<div class="question">
+
+    <h3>2. Which of the following is NOT a polynomial?</h3>
+
+    <label><input type="radio" name="q2">x² + 4</label>
+    <label><input type="radio" name="q2">5x + 1</label>
+    <label><input type="radio" name="q2" data-correct="true">1/x</label>
+    <label><input type="radio" name="q2">7</label>
+
+</div>
+
+<!-- Question 3 -->
+
+<div class="question">
+
+    <h3>3. The degree of a constant polynomial is</h3>
+
+    <label><input type="radio" name="q3" data-correct="true">0</label>
+    <label><input type="radio" name="q3">1</label>
+    <label><input type="radio" name="q3">2</label>
+    <label><input type="radio" name="q3">Undefined</label>
+
+</div>
+
+<!-- Question 4 -->
+
+<div class="question">
+
+    <h3>4. What is the zero of x − 8?</h3>
+
+    <label><input type="radio" name="q4">−8</label>
+    <label><input type="radio" name="q4" data-correct="true">8</label>
+    <label><input type="radio" name="q4">0</label>
+    <label><input type="radio" name="q4">1</label>
+
+</div>
+
+<!-- Question 5 -->
+
+<div class="question">
+
+    <h3>5. A quadratic polynomial can have at most</h3>
+
+    <label><input type="radio" name="q5">1 zero</label>
+    <label><input type="radio" name="q5" data-correct="true">2 zeroes</label>
+    <label><input type="radio" name="q5">3 zeroes</label>
+    <label><input type="radio" name="q5">4 zeroes</label>
+
+</div>
+
+<!-- Question 6 -->
+
+<div class="question">
+
+    <h3>6. Sum of zeroes of ax² + bx + c is</h3>
+
+    <label><input type="radio" name="q6">c/a</label>
+    <label><input type="radio" name="q6">b/a</label>
+    <label><input type="radio" name="q6" data-correct="true">−b/a</label>
+    <label><input type="radio" name="q6">a/b</label>
+
+</div>
+
+<!-- Question 7 -->
+
+<div class="question">
+
+    <h3>7. Product of zeroes of ax² + bx + c is</h3>
+
+    <label><input type="radio" name="q7">−c/a</label>
+    <label><input type="radio" name="q7">−b/a</label>
+    <label><input type="radio" name="q7">a/c</label>
+    <label><input type="radio" name="q7" data-correct="true">c/a</label>
+
+</div>
+
+<!-- Question 8 -->
+
+<div class="question">
+
+    <h3>8. If the zeroes are 2 and 5, their sum is</h3>
+
+    <label><input type="radio" name="q8">10</label>
+    <label><input type="radio" name="q8">3</label>
+    <label><input type="radio" name="q8" data-correct="true">7</label>
+    <label><input type="radio" name="q8">2</label>
+
+</div>
+<!-- Question 9 -->
+
+<div class="question">
+
+    <h3>9. If the zeroes are 4 and 3, their product is</h3>
+
+    <label><input type="radio" name="q9">7</label>
+    <label><input type="radio" name="q9">9</label>
+    <label><input type="radio" name="q9" data-correct="true">12</label>
+    <label><input type="radio" name="q9">1</label>
+
+</div>
+
+<!-- Question 10 -->
+
+<div class="question">
+
+    <h3>10. The polynomial formed from zeroes 4 and 5 is</h3>
+
+    <label><input type="radio" name="q10">x² + 9x + 20</label>
+    <label><input type="radio" name="q10">x² − 20x + 9</label>
+    <label><input type="radio" name="q10" data-correct="true">x² − 9x + 20</label>
+    <label><input type="radio" name="q10">x² + 20</label>
+
+</div>
+
+<!-- Question 11 -->
+
+<div class="question">
+
+    <h3>11. According to the Division Algorithm, Dividend =</h3>
+
+    <label><input type="radio" name="q11">Quotient × Remainder</label>
+    <label><input type="radio" name="q11">Divisor + Quotient</label>
+    <label><input type="radio" name="q11" data-correct="true">Divisor × Quotient + Remainder</label>
+    <label><input type="radio" name="q11">Divisor × Remainder</label>
+
+</div>
+
+<!-- Question 12 -->
+
+<div class="question">
+
+    <h3>12. Which of the following is a linear polynomial?</h3>
+
+    <label><input type="radio" name="q12">x² + 3</label>
+    <label><input type="radio" name="q12" data-correct="true">3x + 2</label>
+    <label><input type="radio" name="q12">x³ − 1</label>
+    <label><input type="radio" name="q12">9</label>
+
+</div>
+
+<!-- Question 13 -->
+
+<div class="question">
+
+    <h3>13. Which of the following is a cubic polynomial?</h3>
+
+    <label><input type="radio" name="q13">x² + 5</label>
+    <label><input type="radio" name="q13">2x + 3</label>
+    <label><input type="radio" name="q13" data-correct="true">x³ − 5x + 2</label>
+    <label><input type="radio" name="q13">4</label>
+
+</div>
+
+<!-- Question 14 -->
+
+<div class="question">
+
+    <h3>14. The graph of a polynomial cuts the _____ at its zeroes.</h3>
+
+    <label><input type="radio" name="q14">y-axis</label>
+    <label><input type="radio" name="q14" data-correct="true">x-axis</label>
+    <label><input type="radio" name="q14">Origin only</label>
+    <label><input type="radio" name="q14">None of these</label>
+
+</div>
+
+<!-- Question 15 -->
+
+<div class="question">
+
+    <h3>15. Which of the following is a quadratic polynomial?</h3>
+
+    <label><input type="radio" name="q15">x + 2</label>
+    <label><input type="radio" name="q15" data-correct="true">x² + 4x + 5</label>
+    <label><input type="radio" name="q15">x³ + 1</label>
+    <label><input type="radio" name="q15">6</label>
+
+</div>
+
+<div class="submit-area">
+
+    <button type="button" class="submit-btn" onclick="checkAnswers()">
+        Submit Test
+    </button>
+
+</div>
+
+</form>
+
+<div id="result" class="result"></div>
+
+<script>
+
+let time = 20 * 60;
+let countdown = null;
+
+const timer = document.getElementById("timer");
+const startBtn = document.getElementById("startBtn");
+
+startBtn.addEventListener("click", () => {
+
+    startBtn.style.display = "none";
+    timer.style.display = "block";
+
+    countdown = setInterval(() => {
+
+        let minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+
+        timer.textContent =
+            `${String(minutes).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`;
+
+        if(time <= 0){
+
+            clearInterval(countdown);
+            checkAnswers();
+
+        }
+
+        time--;
+
+    },1000);
+
+});
+
+function checkAnswers(){
+
+    if(countdown){
+        clearInterval(countdown);
+    }
+
+    let score = 0;
+
+    document.querySelectorAll("input[data-correct='true']").forEach(answer=>{
+
+        if(answer.checked){
+            score++;
+        }
+
+    });
+
+    let percentage = Math.round((score/15)*100);
+
+    let message;
+
+    if(score >= 12){
+
+        message = "🏆 Excellent Work!";
+
+    }
+    else if(score >= 8){
+
+        message = "👍 Good Job! Keep Practicing.";
+
+    }
+    else{
+
+        message = "📚 Revise the chapter and try again.";
+
+    }
+
+    document.getElementById("result").innerHTML = `
+
+        <h2>Your Score</h2>
+
+        <h1>${score} / 15</h1>
+
+        <p>${percentage}%</p>
+
+        <h3>${message}</h3>
+
+    `;
+
+    window.scrollTo({
+
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>

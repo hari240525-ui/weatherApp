@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#090909;
+    color:#fff;
+    line-height:1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:90%;
+    margin:auto;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#2ECC71;
+}
+
+.back{
+    text-decoration:none;
+    color:#cfcfcf;
+    transition:.3s;
+}
+
+.back:hover{
+    color:#2ECC71;
+}
+
+.exam-controls{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+/* ================= START BUTTON ================= */
+
+.start-btn{
+    padding:11px 22px;
+    border:none;
+    border-radius:10px;
+    background:#2ECC71;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.start-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 20px rgba(46,204,113,.35);
+}
+
+/* ================= TIMER ================= */
+
+.timer{
+    background:#151515;
+    border:1px solid rgba(46,204,113,.3);
+    color:#2ECC71;
+    padding:10px 22px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:700;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    text-align:center;
+    margin:50px 0;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#999;
+    font-size:18px;
+}
+
+/* ================= INSTRUCTIONS ================= */
+
+.instructions{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+
+    background:#121212;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+
+    padding:30px;
+}
+
+.instructions h2{
+    color:#2ECC71;
+    margin-bottom:15px;
+}
+
+.instructions ul{
+    padding-left:20px;
+}
+
+.instructions li{
+    margin-bottom:12px;
+    color:#d5d5d5;
+}
+
+/* ================= QUESTIONS ================= */
+
+.question{
+    width:90%;
+    max-width:900px;
+
+    margin:30px auto;
+
+    background:#121212;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    transition:.3s;
+}
+
+.question:hover{
+    border-color:#2ECC71;
+    box-shadow:0 0 20px rgba(46,204,113,.12);
+}
+
+.question h3{
+    margin-bottom:22px;
+    font-size:22px;
+}
+
+.question label{
+    display:block;
+
+    margin:14px 0;
+
+    padding:12px 15px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.question label:hover{
+    background:#202020;
+}
+
+.question input{
+    margin-right:10px;
+}
+
+/* ================= SUBMIT ================= */
+
+.submit-area{
+    text-align:center;
+    margin:50px 0;
+}
+
+.submit-btn{
+    padding:15px 55px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2ECC71;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 25px rgba(46,204,113,.35);
+}
+
+/* ================= RESULT ================= */
+
+.result{
+    width:90%;
+    max-width:750px;
+
+    margin:60px auto;
+
+    text-align:center;
+
+    background:#121212;
+
+    border:1px solid rgba(46,204,113,.3);
+
+    border-radius:20px;
+
+    padding:45px;
+}
+
+.result h2{
+    color:#2ECC71;
+    margin-bottom:15px;
+}
+
+.result h1{
+    font-size:65px;
+    margin:15px 0;
+}
+
+.result p{
+    font-size:22px;
+    color:#bbb;
+}
+
+.result h3{
+    margin-top:18px;
+    color:#fff;
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0d0d0d;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2ECC71;
+    border-radius:20px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        gap:20px;
+        padding:20px 0;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .question h3{
+        font-size:18px;
+    }
+
+    .submit-btn{
+        width:90%;
+    }
+
+}

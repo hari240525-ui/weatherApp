@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Real Numbers Test | Kestrel</title>
+
+<link rel="stylesheet" href="RNT.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<a href="studyM.html" class="back">← Mathematics</a>
+
+<div class="logo">Kestrel</div>
+
+<div class="exam-controls">
+
+<button id="startButton" class="start-btn" onclick="startTimer()">
+▶ Start Test
+</button>
+
+<div class="timer" id="timer">
+20:00
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>Real Numbers Practice Test</h1>
+
+<p>15 Questions • 20 Minutes • Class 10 CBSE</p>
+
+</section>
+
+<div class="instructions">
+
+<h2>Instructions</h2>
+
+<ul>
+
+<li>Read every question carefully.</li>
+
+<li>Each question carries 1 mark.</li>
+
+<li>No negative marking.</li>
+
+<li>Click <b>Start Test</b> before answering.</li>
+
+<li>The test auto-submits after 20 minutes.</li>
+
+</ul>
+
+</div>
+
+<form id="quiz">
+
+<!-- QUESTION 1 -->
+
+<div class="question">
+
+<h3>1. Which of the following is an irrational number?</h3>
+
+<label><input type="radio" name="q1">0.25</label>
+
+<label><input type="radio" name="q1" data-correct="true">√2</label>
+
+<label><input type="radio" name="q1">3/5</label>
+
+<label><input type="radio" name="q1">15</label>
+
+</div>
+
+<!-- QUESTION 2 -->
+
+<div class="question">
+
+<h3>2. The HCF of 18 and 30 is</h3>
+
+<label><input type="radio" name="q2">3</label>
+
+<label><input type="radio" name="q2" data-correct="true">6</label>
+
+<label><input type="radio" name="q2">9</label>
+
+<label><input type="radio" name="q2">12</label>
+
+</div>
+
+<!-- QUESTION 3 -->
+
+<div class="question">
+
+<h3>3. Which fraction has a terminating decimal expansion?</h3>
+
+<label><input type="radio" name="q3">7/12</label>
+
+<label><input type="radio" name="q3" data-correct="true">13/20</label>
+
+<label><input type="radio" name="q3">5/18</label>
+
+<label><input type="radio" name="q3">2/9</label>
+
+</div>
+
+<!-- QUESTION 4 -->
+
+<div class="question">
+
+<h3>4. Euclid's Division Algorithm is used to find</h3>
+
+<label><input type="radio" name="q4">Square Root</label>
+
+<label><input type="radio" name="q4">Cube Root</label>
+
+<label><input type="radio" name="q4" data-correct="true">HCF</label>
+
+<label><input type="radio" name="q4">LCM</label>
+
+</div>
+
+<!-- QUESTION 5 -->
+
+<div class="question">
+
+<h3>5. If HCF = 8 and LCM = 72, then the product of the numbers is</h3>
+
+<label><input type="radio" name="q5" data-correct="true">576</label>
+
+<label><input type="radio" name="q5">80</label>
+
+<label><input type="radio" name="q5">64</label>
+
+<label><input type="radio" name="q5">720</label>
+
+</div>
+
+<!-- QUESTION 6 -->
+
+<div class="question">
+
+<h3>6. Find the HCF of 36 and 48.</h3>
+
+<label><input type="radio" name="q6">6</label>
+
+<label><input type="radio" name="q6" data-correct="true">12</label>
+
+<label><input type="radio" name="q6">18</label>
+
+<label><input type="radio" name="q6">24</label>
+
+</div>
+
+<!-- QUESTION 7 -->
+
+<div class="question">
+
+<h3>7. Find the LCM of 24 and 36.</h3>
+
+<label><input type="radio" name="q7">48</label>
+
+<label><input type="radio" name="q7">60</label>
+
+<label><input type="radio" name="q7" data-correct="true">72</label>
+
+<label><input type="radio" name="q7">96</label>
+
+</div>
+
+<!-- QUESTION 8 -->
+
+<div class="question">
+
+<h3>8. Euclid's Division Lemma is</h3>
+
+<label><input type="radio" name="q8">a = b + q</label>
+
+<label><input type="radio" name="q8" data-correct="true">a = bq + r</label>
+
+<label><input type="radio" name="q8">a = q + r</label>
+
+<label><input type="radio" name="q8">a = br</label>
+
+</div>
+<!-- QUESTION 9 -->
+
+<div class="question">
+
+<h3>9. The decimal expansion of 13/125 is</h3>
+
+<label><input type="radio" name="q9" data-correct="true">Terminating</label>
+
+<label><input type="radio" name="q9">Non-terminating recurring</label>
+
+<label><input type="radio" name="q9">Non-terminating non-recurring</label>
+
+<label><input type="radio" name="q9">Cannot be determined</label>
+
+</div>
+
+<!-- QUESTION 10 -->
+
+<div class="question">
+
+<h3>10. For any two numbers, LCM × HCF =</h3>
+
+<label><input type="radio" name="q10">Sum of the numbers</label>
+
+<label><input type="radio" name="q10">Difference of the numbers</label>
+
+<label><input type="radio" name="q10" data-correct="true">Product of the numbers</label>
+
+<label><input type="radio" name="q10">Square of the numbers</label>
+
+</div>
+
+<!-- QUESTION 11 -->
+
+<div class="question">
+
+<h3>11. √5 is</h3>
+
+<label><input type="radio" name="q11">A rational number</label>
+
+<label><input type="radio" name="q11" data-correct="true">An irrational number</label>
+
+<label><input type="radio" name="q11">A whole number</label>
+
+<label><input type="radio" name="q11">An integer</label>
+
+</div>
+
+<!-- QUESTION 12 -->
+
+<div class="question">
+
+<h3>12. The HCF of 405 and 252 is</h3>
+
+<label><input type="radio" name="q12">3</label>
+
+<label><input type="radio" name="q12">6</label>
+
+<label><input type="radio" name="q12">18</label>
+
+<label><input type="radio" name="q12" data-correct="true">9</label>
+
+</div>
+
+<!-- QUESTION 13 -->
+
+<div class="question">
+
+<h3>13. If HCF = 12 and LCM = 72, the product of the two numbers is</h3>
+
+<label><input type="radio" name="q13">72</label>
+
+<label><input type="radio" name="q13">144</label>
+
+<label><input type="radio" name="q13" data-correct="true">864</label>
+
+<label><input type="radio" name="q13">432</label>
+
+</div>
+
+<!-- QUESTION 14 -->
+
+<div class="question">
+
+<h3>14. Every rational number has a terminating decimal expansion.</h3>
+
+<label><input type="radio" name="q14">True</label>
+
+<label><input type="radio" name="q14" data-correct="true">False</label>
+
+<label><input type="radio" name="q14">Only Integers</label>
+
+<label><input type="radio" name="q14">Cannot be determined</label>
+
+</div>
+
+<!-- QUESTION 15 -->
+
+<div class="question">
+
+<h3>15. The HCF of 144 and 180 is</h3>
+
+<label><input type="radio" name="q15">12</label>
+
+<label><input type="radio" name="q15" data-correct="true">36</label>
+
+<label><input type="radio" name="q15">18</label>
+
+<label><input type="radio" name="q15">24</label>
+
+</div>
+
+<!-- SUBMIT -->
+
+<div class="submit-area">
+
+<button type="button" class="submit-btn" onclick="checkAnswers()">
+
+Submit Test
+
+</button>
+
+</div>
+
+</form>
+
+<!-- RESULT -->
+
+<div id="result" class="result"></div>
+
+<script>
+
+// --------------------
+// TIMER
+// --------------------
+
+let time = 20 * 60;
+let countdown;
+let timerStarted = false;
+
+function startTimer(){
+
+if(timerStarted) return;
+
+timerStarted = true;
+
+document.getElementById("startButton").innerHTML="Test Started ✓";
+document.getElementById("startButton").disabled=true;
+
+countdown = setInterval(()=>{
+
+let minutes=Math.floor(time/60);
+let seconds=time%60;
+
+document.getElementById("timer").innerHTML=
+`${String(minutes).padStart(2,'0')}:${String(seconds).padStart(2,'0')}`;
+
+if(time<=60){
+
+document.getElementById("timer").style.color="#ff4d4d";
+
+}
+
+if(time<=0){
+
+clearInterval(countdown);
+
+checkAnswers();
+
+}
+
+time--;
+
+},1000);
+
+}
+
+// --------------------
+// SCORING
+// --------------------
+
+function checkAnswers(){
+
+clearInterval(countdown);
+
+let score=0;
+
+const answers=document.querySelectorAll("input[data-correct='true']");
+
+answers.forEach(answer=>{
+
+if(answer.checked){
+
+score++;
+
+}
+
+});
+
+let percentage=((score/15)*100).toFixed(0);
+
+let message="";
+
+if(score>=13){
+
+message="🏆 Excellent Work!";
+
+}
+
+else if(score>=10){
+
+message="🌟 Very Good!";
+
+}
+
+else if(score>=7){
+
+message="👍 Good Job!";
+
+}
+
+else{
+
+message="📚 Revise the chapter and try again.";
+
+}
+
+document.getElementById("result").innerHTML=`
+
+<h2>Your Score</h2>
+
+<h1>${score} / 15</h1>
+
+<p>${percentage}%</p>
+
+<h3>${message}</h3>
+
+`;
+
+window.scrollTo({
+
+top:document.body.scrollHeight,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair of Linear Equations - Kestrel</title>
+
+    <link rel="stylesheet" href="PairOF.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="cursor-dot"></div>
+
+    <!--================ HERO =================-->
+
+    <section class="hero">
+
+        <h1>Pair of Linear Equations</h1>
+
+        <p>
+            Complete Class 10 CBSE Notes • NCERT Based • Board Exam Revision
+        </p>
+
+    </section>
+
+    <!--================ MAIN =================-->
+
+    <main class="container">
+
+        <!-- Introduction -->
+
+        <section class="card">
+
+            <h2>
+                <i class="fa-solid fa-book"></i>
+                Introduction
+            </h2>
+
+            <p>
+
+                A pair of linear equations in two variables consists of two equations having
+                the same two variables. The values of x and y that satisfy both equations are
+                called the solution.
+
+            </p>
+
+            <div class="formula">
+
+                ax + by + c = 0
+
+            </div>
+
+            <p>
+
+                where
+
+            </p>
+
+            <ul>
+
+                <li>a and b are coefficients</li>
+
+                <li>c is constant</li>
+
+                <li>a and b cannot both be zero</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Example -->
+
+        <section class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                Example
+
+            </h2>
+
+            <div class="formula">
+
+                2x + y = 7
+
+                <br><br>
+
+                3x - y = 8
+
+            </div>
+
+            <p>
+
+                These two equations together form a Pair of Linear Equations.
+
+            </p>
+
+        </section>
+
+        <!-- Methods -->
+
+        <section class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-list-check"></i>
+
+                Methods of Solving
+
+            </h2>
+
+            <div class="grid">
+
+                <div class="method">
+
+                    <h3>1. Graphical Method</h3>
+
+                    <p>
+
+                        Draw both equations on graph paper.
+                        The point where they intersect is the solution.
+
+                    </p>
+
+                </div>
+
+                <div class="method">
+
+                    <h3>2. Substitution Method</h3>
+
+                    <p>
+
+                        Find one variable from one equation and substitute into the other.
+
+                    </p>
+
+                </div>
+
+                <div class="method">
+
+                    <h3>3. Elimination Method</h3>
+
+                    <p>
+
+                        Eliminate one variable by adding or subtracting equations.
+
+                    </p>
+
+                </div>
+
+                <div class="method">
+
+                    <h3>4. Cross Multiplication</h3>
+
+                    <p>
+
+                        Direct method using determinants.
+                        Mostly used in board exams.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Graphical -->
+
+        <section class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Graphical Method
+
+            </h2>
+
+            <p>
+
+                Draw both equations on graph paper.
+
+                Observe the lines carefully.
+
+            </p>
+
+            <table>
+
+                <tr>
+
+                    <th>Type of Lines</th>
+
+                    <th>Number of Solutions</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>Intersecting</td>
+
+                    <td>One Unique Solution</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Parallel</td>
+
+                    <td>No Solution</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Coincident</td>
+
+                    <td>Infinite Solutions</td>
+
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Substitution -->
+
+        <section class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-pencil"></i>
+
+                Substitution Method
+
+            </h2>
+
+            <h3>Steps</h3>
+
+            <ol>
+
+                <li>Find one variable from any equation.</li>
+
+                <li>Substitute it into the second equation.</li>
+
+                <li>Find the remaining variable.</li>
+
+                <li>Substitute back.</li>
+
+            </ol>
+
+            <h3>Example</h3>
+
+            <div class="formula">
+
+                x + y = 7
+
+                <br><br>
+
+                x − y = 3
+
+            </div>
+
+            <p>
+
+                From first equation
+
+            </p>
+
+            <div class="formula">
+
+                x = 7 − y
+
+            </div>
+
+            <p>
+
+                Substitute into second equation.
+
+            </p>
+
+            <div class="formula">
+
+                (7 − y) − y = 3
+
+            </div>
+
+            <div class="formula">
+
+                7 − 2y = 3
+
+            </div>
+
+            <div class="formula">
+
+                y = 2
+
+            </div>
+
+            <div class="formula">
+
+                x = 5
+
+            </div>
+
+            <div class="answer">
+
+                Answer = (5 , 2)
+
+            </div>
+
+        </section>
+
+        <!-- Elimination -->
+
+        <section class="card">
+
+            <h2>
+
+                <i class="fa-solid fa-minus"></i>
+
+                Elimination Method
+
+            </h2>
+
+            <h3>Steps</h3>
+
+            <ol>
+
+                <li>Make coefficients equal.</li>
+
+                <li>Add or subtract equations.</li>
+
+                <li>Find one variable.</li>
+
+                <li>Substitute back.</li>
+
+            </ol>
+
+            <h3>Example</h3>
+
+            <div class="formula">
+
+                2x + y = 9
+
+                <br><br>
+
+                2x − y = 3
+
+            </div>
+
+            <p>
+
+                Add both equations
+
+            </p>
+
+            <div class="formula">
+
+                4x = 12
+
+            </div>
+
+            <div class="formula">
+
+                x = 3
+
+            </div>
+
+            <div class="formula">
+
+                y = 3
+
+            </div>
+
+            <div class="answer">
+
+                Answer = (3 , 3)
+
+            </div>
+
+        </section>
+
+                <!-- Cross Multiplication -->
+
+        <section class="card">
+
+            <h2>
+                <i class="fa-solid fa-xmark"></i>
+                Cross Multiplication Method
+            </h2>
+
+            <p>
+                This method is useful for solving equations directly and is commonly used in
+                CBSE Board examinations.
+            </p>
+
+            <div class="formula">
+
+                a₁x + b₁y + c₁ = 0
+
+                <br><br>
+
+                a₂x + b₂y + c₂ = 0
+
+            </div>
+
+            <h3>Formula</h3>
+
+            <div class="formula">
+
+                x / (b₁c₂ − b₂c₁)
+
+                <br>
+
+                =
+
+                <br>
+
+                y / (c₁a₂ − c₂a₁)
+
+                <br>
+
+                =
+
+                <br>
+
+                1 / (a₁b₂ − a₂b₁)
+
+            </div>
+
+        </section>
+
+        <!-- Consistency -->
+
+        <section class="card">
+
+            <h2>
+                <i class="fa-solid fa-circle-check"></i>
+                Consistency of Pair of Equations
+            </h2>
+
+            <table>
+
+                <tr>
+                    <th>Condition</th>
+                    <th>Result</th>
+                </tr>
+
+                <tr>
+                    <td>a₁/a₂ ≠ b₁/b₂</td>
+                    <td>One Unique Solution</td>
+                </tr>
+
+                <tr>
+                    <td>a₁/a₂ = b₁/b₂ ≠ c₁/c₂</td>
+                    <td>No Solution</td>
+                </tr>
+
+                <tr>
+                    <td>a₁/a₂ = b₁/b₂ = c₁/c₂</td>
+                    <td>Infinite Solutions</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Important Formula -->
+
+        <section class="card">
+
+            <h2>
+                <i class="fa-solid fa-star"></i>
+                Important Formula
+            </h2>
+
+            <div class="formula">
+
+                a₁x + b₁y + c₁ = 0
+
+                <br><br>
+
+                a₂x + b₂y + c₂ = 0
+
+            </div>
+
+            <ul>
+
+                <li><strong>Unique Solution :</strong> a₁/a₂ ≠ b₁/b₂</li>
+
+                <li><strong>No Solution :</strong> a₁/a₂ = b₁/b₂ ≠ c₁/c₂</li>
+
+                <li><strong>Infinite Solutions :</strong> a₁/a₂ = b₁/b₂ = c₁/c₂</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Word Problems -->
+
+        <section class="card">
+
+            <h2>
+                <i class="fa-solid fa-file-pen"></i>
+                Word Problems
+            </h2>
+
+            <p>
+                Most board exam questions are based on real-life situations.
+            </p>
+
+            <ul>
+
+                <li>Age Problems</li>
+
+                <li>Money Problems</li>
+
+                <li>Speed & Distance</li>
+
+                <li>Train Questions</li>
+
+                <li>Geometry</li>
+
+                <li>Number Problems</li>
+
+                <li>Perimeter & Area</li>
+
+            </ul>
+
+            <h3>Steps</h3>
+
+            <ol>
+
+                <li>Assume variables.</li>
+
+                <li>Form two equations.</li>
+
+                <li>Solve using any method.</li>
+
+                <li>Write the answer with units.</li>
+
+            </ol>
+
+        </section>
+
+        <!-- Exam Tips -->
+
+        <section class="card tips">
+
+            <h2>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Board Exam Tips
+            </h2>
+
+            <ul>
+
+                <li>✔ Learn all four solving methods.</li>
+
+                <li>✔ Practice consistency questions.</li>
+
+                <li>✔ Always verify the solution in both equations.</li>
+
+                <li>✔ Draw graphs neatly using a ruler.</li>
+
+                <li>✔ Write all calculation steps clearly.</li>
+
+                <li>✔ Read word problems carefully before forming equations.</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Quick Revision -->
+
+        <section class="card">
+
+            <h2>
+                <i class="fa-solid fa-bolt"></i>
+                Quick Revision
+            </h2>
+
+            <table>
+
+                <tr>
+                    <th>Method</th>
+                    <th>Best Used When</th>
+                </tr>
+
+                <tr>
+                    <td>Graphical</td>
+                    <td>To visualize the solution</td>
+                </tr>
+
+                <tr>
+                    <td>Substitution</td>
+                    <td>One variable is easy to isolate</td>
+                </tr>
+
+                <tr>
+                    <td>Elimination</td>
+                    <td>Coefficients are easy to eliminate</td>
+                </tr>
+
+                <tr>
+                    <td>Cross Multiplication</td>
+                    <td>Fast calculations in Board Exams</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Kestrel • Pair of Linear Equations Notes • Class 10 CBSE
+        </p>
+
+    </footer>
+
+ 
+
+</body>
+
+</html>
