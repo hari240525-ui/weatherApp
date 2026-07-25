@@ -1,0 +1,281 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+
+    background:#090909;
+    color:#fff;
+    min-height:100vh;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    width:90%;
+    height:80px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:32px;
+    font-weight:700;
+    color:#2ECC71;
+    letter-spacing:1px;
+
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:40px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:#bdbdbd;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.nav-links a:hover,
+.nav-links .active{
+
+    color:#2ECC71;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    width:90%;
+    margin:80px auto 60px;
+
+    text-align:center;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border:1px solid rgba(46,204,113,.4);
+
+    border-radius:30px;
+
+    color:#2ECC71;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    width:700px;
+    max-width:90%;
+
+    margin:auto;
+
+    color:#9c9c9c;
+
+    line-height:1.8;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   ABOUT GRID
+=========================== */
+
+.about-grid{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.info-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(16px);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2ECC71;
+
+    box-shadow:0 0 30px rgba(46,204,113,.15);
+
+}
+
+.info-card i{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    background:#151515;
+
+    color:#2ECC71;
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+}
+
+.info-card h2{
+
+    margin-bottom:18px;
+
+    font-size:26px;
+
+}
+
+.info-card p{
+
+    color:#9d9d9d;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   MISSION
+=========================== */
+
+.mission{
+
+    width:75%;
+
+    margin:90px auto;
+
+    text-align:center;
+
+}
+
+.mission h2{
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+.mission p{
+
+    color:#9f9f9f;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:25px 0;
+
+        gap:20px;
+
+    }
+
+    .nav-links{
+
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .mission{
+
+        width:90%;
+
+    }
+
+}
+

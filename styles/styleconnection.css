@@ -1,0 +1,133 @@
+body{
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main3{
+  width: 100%;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at center, rgba(232,219,179,0.12), transparent 60%),
+    linear-gradient(135deg, #0f1a12, #546B41);
+}
+
+/* Form */
+.form{
+  width: 320px;
+  height: 300px;
+
+  background: rgba(20,20,20,0.55);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+
+  position: absolute;
+  top: 200px;
+  right: 900px;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Form heading */
+.form h2{
+  text-align: center;
+  color: #E8DBB3;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* Login button */
+.btnn{
+  width: 100%;
+  height: 44px;
+  background: #99AD7A;
+  border: none;
+  margin-top: 30px;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.btnn:hover{
+  background: #FFF8EC;
+  color: #546B41;
+}
+
+/* Form */
+.form2{
+  width: 320px;
+  height: 300px;
+
+  background: rgba(20,20,20,0.55);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+
+  position: absolute;
+  top: 200px;
+  right: 400px;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form2 h2{
+  text-align: center;
+  color: #E8DBB3;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* Login button */
+.btnn{
+  width: 100%;
+  height: 44px;
+  background: #99AD7A;
+  border: none;
+  margin-top: 30px;
+  font-size: 17px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  transition: 0.3s;
+}
+
+.btnn:hover{
+  background: #FFF8EC;
+  color: #546B41;
+}
+
+.img{
+  height: 70px;
+  width: 70px;
+  display: block;
+  margin: 0 auto;   /* 👈 THIS centers it */
+}
+
+

@@ -1,0 +1,408 @@
+/* ===========================
+   KESTREL - POLYNOMIALS NOTES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:#ffffff;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:90%;
+    height:80px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#2ECC71;
+    font-size:28px;
+    font-weight:700;
+}
+
+.back{
+    text-decoration:none;
+    color:#9a9a9a;
+    transition:.3s;
+}
+
+.back:hover{
+    color:#2ECC71;
+}
+
+.meta{
+    color:#777;
+    font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+
+    text-align:center;
+
+    margin:45px 0;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    margin-bottom:10px;
+
+}
+
+.hero p{
+
+    color:#8a8a8a;
+
+    font-size:17px;
+
+}
+
+/* CONTAINER */
+
+.container{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+/* CARD */
+
+.card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:28px;
+
+    backdrop-filter:blur(16px);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#2ECC71;
+
+    box-shadow:0 15px 35px rgba(46,204,113,.12);
+
+}
+
+/* SPECIAL CARDS */
+
+.highlight{
+
+    border-left:5px solid #2ECC71;
+
+}
+
+.formula{
+
+    border-left:5px solid #f4b400;
+
+}
+
+/* TEXT */
+
+.card h2{
+
+    margin-bottom:18px;
+
+    font-size:28px;
+
+}
+
+.card h3{
+
+    margin:18px 0 10px;
+
+    color:#2ECC71;
+
+}
+
+.card p{
+
+    color:#c6c6c6;
+
+    line-height:1.8;
+
+    margin-bottom:15px;
+
+}
+
+.card ul{
+
+    margin-left:20px;
+
+}
+
+.card li{
+
+    margin:10px 0;
+
+    color:#d8d8d8;
+
+}
+
+/* BOX */
+
+.box{
+
+    background:#131313;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:14px;
+
+    padding:18px;
+
+    margin-top:15px;
+
+    line-height:1.8;
+
+    color:#e4e4e4;
+
+}
+
+/* FORMULA BOX */
+
+.formula-box{
+
+    background:#111;
+
+    border:1px solid rgba(46,204,113,.3);
+
+    border-radius:14px;
+
+    padding:18px;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#2ECC71;
+
+    margin-top:15px;
+
+}
+
+/* TABLE */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:10px;
+
+}
+
+th{
+
+    background:#2ECC71;
+
+    color:white;
+
+    padding:12px;
+
+    font-size:16px;
+
+}
+
+td{
+
+    padding:12px;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+}
+
+tr:nth-child(even){
+
+    background:rgba(255,255,255,.02);
+
+}
+
+/* FOOTER */
+
+.footer{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:60px auto 40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+    text-decoration:none;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:230px;
+
+    padding:15px 22px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.04);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#2ECC71;
+
+    box-shadow:0 10px 25px rgba(46,204,113,.15);
+
+}
+
+/* PRIMARY BUTTON */
+
+.primary{
+
+    background:linear-gradient(135deg,#2ECC71,#1faa59);
+
+    border:none;
+
+}
+
+.primary:hover{
+
+    transform:translateY(-3px) scale(1.02);
+
+    box-shadow:0 12px 30px rgba(46,204,113,.35);
+
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0b0b0b;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2ECC71;
+
+    border-radius:20px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:36px;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:10px;
+
+    height:auto;
+
+    padding:20px 0;
+
+}
+
+.footer{
+
+    flex-direction:column;
+
+}
+
+.btn{
+
+    width:100%;
+
+}
+
+.card{
+
+    padding:22px;
+
+}
+
+table{
+
+    font-size:14px;
+
+}
+
+}

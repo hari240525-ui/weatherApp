@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:#090909;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    width:90%;
+    height:80px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:32px;
+    font-weight:700;
+    color:#2ecc71;
+
+}
+
+.navbar ul{
+
+    display:flex;
+    list-style:none;
+    gap:40px;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+    color:#cfcfcf;
+    transition:.3s;
+
+}
+
+.navbar a:hover,
+.active{
+
+    color:#2ecc71;
+
+}
+
+/* HERO */
+
+.hero{
+
+    width:90%;
+    margin:70px auto;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+    margin-bottom:18px;
+
+}
+
+.hero p{
+
+    color:#9a9a9a;
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+
+}
+
+/* GRID */
+
+.test-grid{
+
+    width:90%;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:30px;
+
+    padding-bottom:60px;
+
+}
+
+/* CARD */
+
+.test-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    backdrop-filter:blur(16px);
+
+    transition:.35s;
+
+}
+
+.test-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2ecc71;
+
+    box-shadow:0 0 30px rgba(46,204,113,.18);
+
+}
+
+/* ICON */
+
+.subject-icon{
+
+    width:65px;
+    height:65px;
+
+    border-radius:18px;
+
+    background:#151515;
+
+    color:#2ecc71;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:26px;
+
+    margin-bottom:25px;
+
+}
+
+.test-card h2{
+
+    font-size:28px;
+    margin-bottom:15px;
+
+}
+
+.test-card p{
+
+    color:#9b9b9b;
+    line-height:1.7;
+    margin-bottom:30px;
+
+}
+
+/* BUTTONS */
+
+.difficulty{
+
+    display:flex;
+    gap:12px;
+
+}
+
+.difficulty a{
+
+    flex:1;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+/* EASY */
+
+.easy{
+
+    color:#4ade80;
+    border:1px solid #4ade80;
+    background:#111;
+
+}
+
+.easy:hover{
+
+    background:#4ade80;
+    color:white;
+
+}
+
+/* MEDIUM */
+
+.medium{
+
+    color:#fbbf24;
+    border:1px solid #fbbf24;
+    background:#111;
+
+}
+
+.medium:hover{
+
+    background:#fbbf24;
+    color:black;
+
+}
+
+/* HARD */
+
+.hard{
+
+    color:#ef4444;
+    border:1px solid #ef4444;
+    background:#111;
+
+}
+
+.hard:hover{
+
+    background:#ef4444;
+    color:white;
+
+}
+
