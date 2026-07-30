@@ -1,0 +1,221 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:#0b0b0b;
+  color:#fff;
+}
+
+/* NAVBAR */
+
+.navbar{
+  width:90%;
+  margin:auto;
+  height:80px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  color:#2ecc71;
+  font-size:28px;
+  font-weight:700;
+}
+
+.back{
+  color:#aaa;
+  text-decoration:none;
+}
+
+.back:hover{
+  color:#2ecc71;
+}
+
+.meta{
+  color:#666;
+  font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+  text-align:center;
+  margin:40px 0;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero p{
+  color:#888;
+  margin-top:10px;
+}
+
+/* CONTAINER */
+
+.container{
+  width:90%;
+  margin:auto;
+
+  display:grid;
+  gap:25px;
+}
+
+/* CARD */
+
+.card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:18px;
+  padding:25px;
+
+  backdrop-filter:blur(12px);
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#2ecc71;
+}
+
+/* SPECIAL CARDS */
+
+.highlight{
+  border-left:4px solid #2ecc71;
+}
+
+.formula{
+  border-left:4px solid #fbbf24;
+}
+
+/* TEXT */
+
+h2{
+  margin-bottom:15px;
+}
+
+p{
+  color:#aaa;
+  line-height:1.6;
+}
+
+ul{
+  margin-top:10px;
+  padding-left:20px;
+}
+
+li{
+  margin:6px 0;
+  color:#ccc;
+}
+
+/* BOX */
+
+.box{
+  background:#111;
+  padding:15px;
+  border-radius:12px;
+  margin-top:10px;
+  font-family:monospace;
+  color:#ddd;
+}
+
+/* FORMULA BOX */
+
+.formula-box{
+  background:#111;
+  padding:18px;
+  text-align:center;
+  border-radius:12px;
+
+  font-size:20px;
+  font-weight:600;
+
+  color:#2ecc71;
+  margin:15px 0;
+}
+
+/* FOOTER */
+
+/* FOOTER CENTER FIX */
+.footer{
+  width:90%;
+  margin:50px auto 30px;
+
+  display:flex;
+  justify-content:center;   /* centers horizontally */
+  align-items:center;
+
+  gap:20px;
+}
+
+/* BUTTON BASE */
+.btn{
+  text-decoration:none;     /* removes underline */
+  text-align:center;
+
+  min-width:220px;          /* makes both equal size */
+
+  padding:15px 18px;
+
+  border-radius:14px;
+
+  border:1px solid rgba(255,255,255,0.08);
+
+  background:rgba(255,255,255,0.04);
+
+  color:#fff;
+
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+  backdrop-filter:blur(10px);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* HOVER */
+.btn:hover{
+  transform:translateY(-3px);
+  border-color:#2ecc71;
+  box-shadow:0 10px 25px rgba(46,204,113,0.15);
+}
+
+/* PRIMARY BUTTON */
+.primary{
+  background:linear-gradient(135deg,#2ecc71,#1faa59);
+  border:none;
+  color:white;
+}
+
+.primary:hover{
+  transform:translateY(-3px) scale(1.03);
+  box-shadow:0 12px 30px rgba(46,204,113,0.4);
+}
+
+/* Hide default cursor */
+
+body{
+cursor:none;
+}
+
+/* Cursor */
+
+/* Hide default cursor */
+body{
+    cursor:none;
+}

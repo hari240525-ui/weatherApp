@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login | Kestrel</title>
+
+<link rel="stylesheet" href="login.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Kestrel</h1>
+
+        <h2>Welcome Back</h2>
+
+        <p>Continue your learning journey.</p>
+
+        <form>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required>
+
+                <i class="fa-solid fa-eye eye" id="toggle"></i>
+
+            </div>
+
+            <button type="submit">
+
+                Log In
+
+            </button>
+
+        </form>
+
+        <div class="divider">
+
+            <span>OR</span>
+
+        </div>
+
+        <a href="index.html" class="guest">
+
+            Continue as Guest
+
+        </a>
+
+        <div class="signup">
+
+            Don't have an account?
+
+            <a href="#">Create Account</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const toggle=document.getElementById("toggle");
+const password=document.getElementById("password");
+
+toggle.onclick=()=>{
+
+if(password.type==="password"){
+
+password.type="text";
+toggle.classList.replace("fa-eye","fa-eye-slash");
+
+}else{
+
+password.type="password";
+toggle.classList.replace("fa-eye-slash","fa-eye");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

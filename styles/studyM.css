@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+
+    background:#090909;
+    color:white;
+
+}
+
+/* Navbar */
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:32px;
+    font-weight:700;
+    color:#2ecc71;
+
+}
+
+.navbar ul{
+
+    display:flex;
+    gap:40px;
+    list-style:none;
+
+}
+
+.navbar a{
+
+    color:#cfcfcf;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.navbar a:hover,
+.active{
+
+    color:#2ecc71;
+
+}
+
+/* Hero */
+
+.hero{
+
+    text-align:center;
+    margin:50px 0;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+    font-weight:700;
+
+}
+
+.hero p{
+
+    color:#8f8f8f;
+    margin-top:15px;
+    font-size:18px;
+
+}
+
+/* Grid */
+
+.chapter-grid{
+
+    width:90%;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:28px;
+
+    padding-bottom:60px;
+
+}
+
+/* Card */
+
+.chapter-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.07);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.35s;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.chapter-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2ecc71;
+
+    box-shadow:0 0 25px rgba(46,204,113,.15);
+
+}
+
+.chapter-number{
+
+    display:inline-block;
+
+    background:#1f1f1f;
+
+    color:#2ecc71;
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+}
+
+.chapter-card h2{
+
+    font-size:24px;
+
+    margin-bottom:30px;
+
+    line-height:1.4;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.btn{
+
+    flex:1;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.revise{
+
+    background:#1b1b1b;
+
+    color:#2ecc71;
+
+    border:1px solid #2ecc71;
+
+}
+
+.revise:hover{
+
+    background:#2ecc71;
+
+    color:white;
+
+}
+
+.test{
+
+    background:#2ecc71;
+
+    color:white;
+
+}
+
+.test:hover{
+
+    transform:scale(1.04);
+
+    box-shadow:0 0 20px rgba(46,204,113,.4);
+
+}
+

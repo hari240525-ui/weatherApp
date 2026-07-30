@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polynomials Test | Kestrel</title>
+
+    <link rel="stylesheet" href="PairOFTest.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="studyM.html" class="back">
+        ← Mathematics
+    </a>
+
+    <div class="logo">
+        Kestrel
+    </div>
+
+    <div class="exam-controls">
+
+        <button id="startBtn" class="start-btn">
+            ▶ Start Test
+        </button>
+
+        <div id="timer" class="timer" style="display:none;">
+            20:00
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <h1>Pair Of Linear Equations Practice Test</h1>
+
+    <p>15 Questions • 20 Minutes • Class 10 CBSE</p>
+
+</section>
+
+<!-- ================= INSTRUCTIONS ================= -->
+
+<div class="instructions">
+
+    <h2>Instructions</h2>
+
+    <ul>
+
+        <li>Read every question carefully.</li>
+        <li>Each question carries 1 mark.</li>
+        <li>No negative marking.</li>
+        <li>Click <b>Start Test</b> to begin the timer.</li>
+        <li>The test auto-submits after 20 minutes.</li>
+
+    </ul>
+
+</div>
+
+<!-- ================= QUIZ ================= -->
+
+<form id="quiz">
+
+<!-- Question 1 -->
+
+<!-- ================= QUESTIONS ================= -->
+
+<div class="question">
+
+    <h3>1. A pair of linear equations in two variables has:</h3>
+
+    <label><input type="radio" name="q1"> One variable</label>
+
+    <label><input type="radio" name="q1" data-correct="true"> Two variables</label>
+
+    <label><input type="radio" name="q1"> Three variables</label>
+
+    <label><input type="radio" name="q1"> Four variables</label>
+
+</div>
+
+<div class="question">
+
+    <h3>2. If two lines intersect, the system has:</h3>
+
+    <label><input type="radio" name="q2" data-correct="true"> One solution</label>
+
+    <label><input type="radio" name="q2"> No solution</label>
+
+    <label><input type="radio" name="q2"> Infinite solutions</label>
+
+    <label><input type="radio" name="q2"> None</label>
+
+</div>
+
+<div class="question">
+
+    <h3>3. Parallel lines have:</h3>
+
+    <label><input type="radio" name="q3"> One solution</label>
+
+    <label><input type="radio" name="q3" data-correct="true"> No solution</label>
+
+    <label><input type="radio" name="q3"> Infinite solutions</label>
+
+    <label><input type="radio" name="q3"> Two solutions</label>
+
+</div>
+
+<div class="question">
+
+    <h3>4. Coincident lines have:</h3>
+
+    <label><input type="radio" name="q4"> One solution</label>
+
+    <label><input type="radio" name="q4"> No solution</label>
+
+    <label><input type="radio" name="q4" data-correct="true"> Infinite solutions</label>
+
+    <label><input type="radio" name="q4"> Cannot be determined</label>
+
+</div>
+
+<div class="question">
+
+    <h3>5. Which method uses graphs?</h3>
+
+    <label><input type="radio" name="q5" data-correct="true"> Graphical Method</label>
+
+    <label><input type="radio" name="q5"> Elimination Method</label>
+
+    <label><input type="radio" name="q5"> Substitution Method</label>
+
+    <label><input type="radio" name="q5"> Cross Multiplication</label>
+
+</div>
+
+<div class="question">
+
+    <h3>6. In substitution method, first we:</h3>
+
+    <label><input type="radio" name="q6" data-correct="true"> Find one variable</label>
+
+    <label><input type="radio" name="q6"> Draw graph</label>
+
+    <label><input type="radio" name="q6"> Multiply equations</label>
+
+    <label><input type="radio" name="q6"> Eliminate both variables</label>
+
+</div>
+
+<div class="question">
+
+    <h3>7. In elimination method, we:</h3>
+
+    <label><input type="radio" name="q7"> Draw graph</label>
+
+    <label><input type="radio" name="q7" data-correct="true"> Eliminate one variable</label>
+
+    <label><input type="radio" name="q7"> Guess the answer</label>
+
+    <label><input type="radio" name="q7"> Use calculator only</label>
+
+</div>
+
+<div class="question">
+
+    <h3>8. The equation 2x + 3y = 7 is:</h3>
+
+    <label><input type="radio" name="q8"> Quadratic</label>
+
+    <label><input type="radio" name="q8" data-correct="true"> Linear</label>
+
+    <label><input type="radio" name="q8"> Cubic</label>
+
+    <label><input type="radio" name="q8"> Polynomial of degree 4</label>
+
+</div>
+
+<div class="question">
+
+    <h3>9. If a₁/a₂ ≠ b₁/b₂ then there are:</h3>
+
+    <label><input type="radio" name="q9" data-correct="true"> One unique solution</label>
+
+    <label><input type="radio" name="q9"> No solution</label>
+
+    <label><input type="radio" name="q9"> Infinite solutions</label>
+
+    <label><input type="radio" name="q9"> Two solutions</label>
+
+</div>
+
+<div class="question">
+
+    <h3>10. If a₁/a₂ = b₁/b₂ ≠ c₁/c₂ then:</h3>
+
+    <label><input type="radio" name="q10"> Infinite solutions</label>
+
+    <label><input type="radio" name="q10"> One solution</label>
+
+    <label><input type="radio" name="q10" data-correct="true"> No solution</label>
+
+    <label><input type="radio" name="q10"> Cannot be solved</label>
+
+</div>
+<div class="question">
+
+    <h3>11. Which method uses determinants?</h3>
+
+    <label><input type="radio" name="q11"> Graphical Method</label>
+
+    <label><input type="radio" name="q11"> Elimination Method</label>
+
+    <label><input type="radio" name="q11"> Substitution Method</label>
+
+    <label><input type="radio" name="q11" data-correct="true"> Cross Multiplication Method</label>
+
+</div>
+
+<div class="question">
+
+    <h3>12. The solution of two intersecting lines is:</h3>
+
+    <label><input type="radio" name="q12"> Infinite</label>
+
+    <label><input type="radio" name="q12"> Zero</label>
+
+    <label><input type="radio" name="q12" data-correct="true"> One unique point</label>
+
+    <label><input type="radio" name="q12"> Cannot be found</label>
+
+</div>
+
+<div class="question">
+
+    <h3>13. Which pair has infinitely many solutions?</h3>
+
+    <label><input type="radio" name="q13"> Parallel lines</label>
+
+    <label><input type="radio" name="q13" data-correct="true"> Coincident lines</label>
+
+    <label><input type="radio" name="q13"> Intersecting lines</label>
+
+    <label><input type="radio" name="q13"> Perpendicular lines</label>
+
+</div>
+
+<div class="question">
+
+    <h3>14. Which of the following is a pair of linear equations?</h3>
+
+    <label><input type="radio" name="q14" data-correct="true"> x + y = 5 and 2x − y = 3</label>
+
+    <label><input type="radio" name="q14"> x² + y = 5 and x − y = 3</label>
+
+    <label><input type="radio" name="q14"> x³ + y = 6 and x + y = 4</label>
+
+    <label><input type="radio" name="q14"> x² + y² = 10 and x − y = 2</label>
+
+</div>
+
+<div class="question">
+
+    <h3>15. Which method is generally the fastest in board exams?</h3>
+
+    <label><input type="radio" name="q15"> Graphical Method</label>
+
+    <label><input type="radio" name="q15"> Substitution Method</label>
+
+    <label><input type="radio" name="q15"> Elimination Method</label>
+
+    <label><input type="radio" name="q15" data-correct="true"> Cross Multiplication Method</label>
+
+</div>
+<div class="submit-area">
+
+    <button type="button" class="submit-btn" onclick="checkAnswers()">
+        Submit Test
+    </button>
+
+</div>
+
+</form>
+
+<div id="result" class="result"></div>
+
+<script>
+
+let time = 20 * 60;
+let countdown = null;
+
+const timer = document.getElementById("timer");
+const startBtn = document.getElementById("startBtn");
+
+startBtn.addEventListener("click", () => {
+
+    startBtn.style.display = "none";
+    timer.style.display = "block";
+
+    countdown = setInterval(() => {
+
+        let minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+
+        timer.textContent =
+            `${String(minutes).padStart(2,"0")}:${String(seconds).padStart(2,"0")}`;
+
+        if(time <= 0){
+
+            clearInterval(countdown);
+            checkAnswers();
+
+        }
+
+        time--;
+
+    },1000);
+
+});
+
+function checkAnswers(){
+
+    if(countdown){
+        clearInterval(countdown);
+    }
+
+    let score = 0;
+
+    document.querySelectorAll("input[data-correct='true']").forEach(answer=>{
+
+        if(answer.checked){
+            score++;
+        }
+
+    });
+
+    let percentage = Math.round((score/15)*100);
+
+    let message;
+
+    if(score >= 12){
+
+        message = "🏆 Excellent Work!";
+
+    }
+    else if(score >= 8){
+
+        message = "👍 Good Job! Keep Practicing.";
+
+    }
+    else{
+
+        message = "📚 Revise the chapter and try again.";
+
+    }
+
+    document.getElementById("result").innerHTML = `
+
+        <h2>Your Score</h2>
+
+        <h1>${score} / 15</h1>
+
+        <p>${percentage}%</p>
+
+        <h3>${message}</h3>
+
+    `;
+
+    window.scrollTo({
+
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+
+    });
+
+}
+
+</script>
+
+</body>
+</html>
